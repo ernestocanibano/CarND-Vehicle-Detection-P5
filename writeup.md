@@ -128,4 +128,5 @@ Here's an example result showing the heatmap from a series of frames of video, t
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 1. Sometimes the pipeline fails, not detecting a car instantly. This is due to the threshold to remove false positives.
-2. I tried usin a non linear SVM , with parameters optimized using `GridSearchCV()` the result is better, but trainning time is huge. This classifer is saved in the file `my_classifier_gridsearch.py`.
+2. I tried usin a non linear SVM , with parameters optimized using `GridSearchCV()` the result is better, but trainning time is huge. This classifer is saved in the file `my_classifier_gridsearch.py` (but I couldn't upload to github due its big size). It is possible to see the video outputs [here](./project_video_output_gridsearchcv.mp4) and here [here](./test_video_output_gridsearchcv.mp4).
+3. I think it would be necessary to optimize the design to achieve a better processing speed.
